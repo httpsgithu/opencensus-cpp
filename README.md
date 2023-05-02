@@ -1,3 +1,11 @@
+> **Warning**
+>
+> OpenCensus and OpenTracing have merged to form [OpenTelemetry](https://opentelemetry.io), which serves as the next major version of OpenCensus and OpenTracing.
+>
+> OpenTelemetry has now reached feature parity with OpenCensus, with tracing and metrics SDKs available in .NET, Golang, Java, NodeJS, and Python. **All OpenCensus Github repositories, except [census-instrumentation/opencensus-python](https://github.com/census-instrumentation/opencensus-python), will be archived on July 31st, 2023**. We encourage users to migrate to OpenTelemetry by this date.
+>
+> To help you gradually migrate your instrumentation to OpenTelemetry, bridges are available in Java, Go, Python, and JS. [**Read the full blog post to learn more**](https://opentelemetry.io/blog/2023/sunsetting-opencensus/).
+
 # OpenCensus - A stats collection and distributed tracing framework
 [![Gitter chat][gitter-image]][gitter-url]
 [![Travis Build Status][travis-image]][travis-url]
@@ -44,7 +52,7 @@ for stats.
 ## Language support
 
 * STL is required. (e.g. `libstdc++`, `libc++`, etc)
-* C++11 is required.
+* C++14 is required.
 * [`absl`](https://github.com/abseil/abseil-cpp/) is used for its building blocks.
 * [`googletest`](https://github.com/google/googletest/) is used for tests.
 * [`benchmark`](https://github.com/google/benchmark/) is used for benchmarking.
